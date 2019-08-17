@@ -1832,11 +1832,33 @@ eval("(function () {\n  'use strict';\n\n  angular.module('app', []);\n})();\n\n
 /*!*****************************************************************!*\
   !*** ./src/app/containers/bucket-list/bucket-list.component.js ***!
   \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("(function () {\n  'use strict';\n\n  angular.module('app').component('bucketList', {\n    template: __webpack_require__(/*! ./bucket-list.html */ \"./src/app/containers/bucket-list/bucket-list.html\"),\n    controller: BucketListController\n  });\n\n  function BucketListController() {\n    const $ctrl = this;\n    $ctrl.$onInit = $onInit;\n\n    function $onInit() {\n      console.log('hey');\n    }\n  }\n})();\n\n//# sourceURL=webpack:///./src/app/containers/bucket-list/bucket-list.component.js?");
+
+/***/ }),
+
+/***/ "./src/app/containers/bucket-list/bucket-list.html":
+/*!*********************************************************!*\
+  !*** ./src/app/containers/bucket-list/bucket-list.html ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<div>\\n    BUCKET LIST TEMPLATE\\n</div>\\n\";\n\n//# sourceURL=webpack:///./src/app/containers/bucket-list/bucket-list.html?");
+
+/***/ }),
+
+/***/ "./src/app/containers/bucket-list/react-bucket-list.component.js":
+/*!***********************************************************************!*\
+  !*** ./src/app/containers/bucket-list/react-bucket-list.component.js ***!
+  \***********************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var angular__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! angular */ \"./node_modules/angular/index.js\");\n/* harmony import */ var angular__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(angular__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react2angular__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react2angular */ \"./node_modules/react2angular/index.js\");\n/* harmony import */ var react2angular__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react2angular__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-components */ \"./react-components/index.js\");\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (angular__WEBPACK_IMPORTED_MODULE_0___default.a.module('app').component('bucketList', Object(react2angular__WEBPACK_IMPORTED_MODULE_1__[\"react2angular\"])(react_components__WEBPACK_IMPORTED_MODULE_2__[\"BucketList\"], []))); // (function () {\n//     'use strict';\n//     angular.module('app')\n//         .component('bucketList', {\n//             template: require('./bucket-list.html'),\n//             controller: BucketListController\n//         });\n//     function BucketListController() {\n//         const $ctrl = this;\n//         $ctrl.$onInit = $onInit;\n//         function $onInit() {\n//             console.log('hey')\n//         }\n//     }\n// })();\n\n//# sourceURL=webpack:///./src/app/containers/bucket-list/bucket-list.component.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var angular__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! angular */ \"./node_modules/angular/index.js\");\n/* harmony import */ var angular__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(angular__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react2angular__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react2angular */ \"./node_modules/react2angular/index.js\");\n/* harmony import */ var react2angular__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react2angular__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-components */ \"./react-components/index.js\");\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (angular__WEBPACK_IMPORTED_MODULE_0___default.a.module('app').component('reactBucketList', Object(react2angular__WEBPACK_IMPORTED_MODULE_1__[\"react2angular\"])(react_components__WEBPACK_IMPORTED_MODULE_2__[\"BucketList\"], [])));\n\n//# sourceURL=webpack:///./src/app/containers/bucket-list/react-bucket-list.component.js?");
 
 /***/ }),
 
@@ -1848,7 +1870,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var angu
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _app_module_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.module.js */ \"./src/app/app.module.js\");\n/* harmony import */ var _app_module_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_app_module_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _containers_bucket_list_bucket_list_component_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./containers/bucket-list/bucket-list.component.js */ \"./src/app/containers/bucket-list/bucket-list.component.js\");\n/* harmony import */ var _styles_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/index.js */ \"./src/app/styles/index.js\");\n\n // Styles\n\n\n\n//# sourceURL=webpack:///./src/app/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _app_module_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.module.js */ \"./src/app/app.module.js\");\n/* harmony import */ var _app_module_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_app_module_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _containers_bucket_list_bucket_list_component_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./containers/bucket-list/bucket-list.component.js */ \"./src/app/containers/bucket-list/bucket-list.component.js\");\n/* harmony import */ var _containers_bucket_list_bucket_list_component_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_containers_bucket_list_bucket_list_component_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _containers_bucket_list_react_bucket_list_component_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./containers/bucket-list/react-bucket-list.component.js */ \"./src/app/containers/bucket-list/react-bucket-list.component.js\");\n/* harmony import */ var _styles_index_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/index.js */ \"./src/app/styles/index.js\");\n // Containers\n\n // Demo React -> Angular Components\n\n // Styles\n\n\n\n//# sourceURL=webpack:///./src/app/index.js?");
 
 /***/ }),
 

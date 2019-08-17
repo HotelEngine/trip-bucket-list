@@ -1,32 +1,24 @@
-import angular from 'angular';
-import { react2angular } from 'react2angular';
-import { BucketList } from 'react-components';
+(function () {
 
-export default angular
-    .module('app')
-    .component('bucketList', react2angular(BucketList, []));
+    'use strict';
 
-// (function () {
+    angular.module('app')
+        .component('bucketList', {
+            template: require('./bucket-list.html'),
+            controller: BucketListController
+        });
 
-//     'use strict';
+    function BucketListController() {
 
-//     angular.module('app')
-//         .component('bucketList', {
-//             template: require('./bucket-list.html'),
-//             controller: BucketListController
-//         });
+        const $ctrl = this;
 
-//     function BucketListController() {
+        $ctrl.$onInit = $onInit;
 
-//         const $ctrl = this;
+        function $onInit() {
 
-//         $ctrl.$onInit = $onInit;
+            console.log('hey')
+        }
 
-//         function $onInit() {
+    }
 
-//             console.log('hey')
-//         }
-
-//     }
-
-// })();
+})();

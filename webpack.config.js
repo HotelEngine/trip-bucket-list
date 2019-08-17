@@ -3,7 +3,6 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-    // entry: './src/app/index.js',
     entry: {
         app: path.resolve(__dirname, 'src/app/index.js'),
         vendor: ['angular']
