@@ -1,1 +1,1 @@
-export { default as BucketList } from './containers/BucketList';
+export { default as BucketList } from './containers/BucketList/BucketList';

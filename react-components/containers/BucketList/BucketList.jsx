@@ -1,13 +1,27 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const BucketList = () => {
+export default class BucketList extends Component {
 
-    return (
-        <div>
-            BUCKET LIST REACT
-        </div>
-    );
+    render() {
+
+        return (
+            <div>
+                BUCKET LIST REACT
+            </div>
+        );
+
+    }
 
 }
 
-export default BucketList;
+// const BucketList = () => {
+
+//     return (
+//         <div>
+//             BUCKET LIST REACT
+//         </div>
+//     );
+
+// }
+
+// export default BucketList;

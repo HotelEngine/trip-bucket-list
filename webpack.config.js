@@ -3,9 +3,20 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-    entry: './src/app/index.js',
+    // entry: './src/app/index.js',
+    entry: {
+        app: path.resolve(__dirname, 'src/app/index.js'),
+        vendor: ['angular']
+    },
+    resolve: {
+        alias: {
+            // allow angular (src) app to import from react-components
+            'react-components': path.join(__dirname, '/react-components/index.js')
+        },
+        extensions: ['.js', '.jsx']
+    },
     output: {
-        filename: 'whatever.js',
+        filename: '[name].js',
         path: path.resolve(__dirname, 'public')
     },
     mode: 'development',
@@ -16,7 +27,7 @@ module.exports = {
                 loader: 'html-loader'
             },
             {
-                test: /\.js$/,
+                test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: {
                     loader: "babel-loader"
