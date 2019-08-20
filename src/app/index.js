@@ -1,3 +1,5 @@
+import ngRedux from 'ng-redux';
+
 import './app.module.js';
 
 // Containers

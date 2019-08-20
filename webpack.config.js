@@ -10,7 +10,8 @@ module.exports = {
     resolve: {
         alias: {
             // allow angular app to import from react-components
-            'react-components': path.join(__dirname, '/react-components/index.js')
+            'react-components': path.join(__dirname, '/react-components/index.js'),
+            'Redux': path.join(__dirname, '/Redux')
         },
         extensions: ['.js', '.jsx']
     },
