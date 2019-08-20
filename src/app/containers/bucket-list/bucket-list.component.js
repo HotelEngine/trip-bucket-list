@@ -12,11 +12,14 @@
 
         const $ctrl = this;
 
+        $ctrl.trips = require('../../data/trips').default;
+
         $ctrl.$onInit = $onInit;
 
         function $onInit() {
 
-            console.log('hey')
+            console.log('trips', $ctrl.trips);
+
         }
 
     }

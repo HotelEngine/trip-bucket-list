@@ -1,8 +1,37 @@
 bucket-list {
+    font-family: 'Lexend Exa', sans-serif;
 
-    div {
-        background: red;
-        color: white;
+    h1 {
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .trip-list {
+        margin: 0 auto;
+        width: 80vw;
+    }
+
+    .trip {
+        display: flex;
+        align-items: center;
+        border: 1px solid lightpink;
+        padding: 20px;
+        margin-bottom: 20px;
+        position: relative;
+
+        .image-wrapper {
+            height: 115px;
+            overflow: hidden;
+            width: 200px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        span {
+            margin-left: 25px;
+        }
     }
 }
 

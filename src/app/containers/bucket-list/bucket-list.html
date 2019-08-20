@@ -1,3 +1,16 @@
 <div>
-    BUCKET LIST TEMPLATE
+    <h1>Trip Bucket List</h1>
+
+    <div class="trip-list">
+        <div class="trip" ng-repeat="trip in $ctrl.trips">
+            <div class="image-wrapper">
+                <img ng-src="{{trip.image}}" alt="">
+            </div>
+            <span>{{trip.city}}, {{trip.country}}</span>
+            <div class="checkbox-wrapper">
+                <input name="checked" type="checkbox" ng-model="trip.checked">
+                <label for="checked"></label>
+            </div>
+        </div>
+    </div>
 </div>

@@ -9,7 +9,7 @@ module.exports = {
     },
     resolve: {
         alias: {
-            // allow angular (src) app to import from react-components
+            // allow angular app to import from react-components
             'react-components': path.join(__dirname, '/react-components/index.js')
         },
         extensions: ['.js', '.jsx']
