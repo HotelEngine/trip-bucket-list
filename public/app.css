@@ -56,4 +56,7 @@ bucket-list {
       width: 100%; }
     bucket-list .trip span {
       margin-left: 25px; }
+    bucket-list .trip input[type="checkbox"] {
+      font-size: 100px;
+      margin-left: 20px; }
 

@@ -6020,7 +6020,7 @@ eval("(function () {\n  'use strict';\n\n  angular.module('app').component('buck
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = \"<div>\\n    <h1>Trip Bucket List</h1>\\n\\n    <div class=\\\"trip-list\\\">\\n        <div class=\\\"trip\\\" ng-repeat=\\\"trip in $ctrl.trips\\\">\\n            <div class=\\\"image-wrapper\\\">\\n                <img ng-src=\\\"{{trip.image}}\\\" alt=\\\"\\\">\\n            </div>\\n            <span>{{trip.city}}, {{trip.country}}</span>\\n            <div class=\\\"checkbox-wrapper\\\">\\n                <input name=\\\"checked\\\" type=\\\"checkbox\\\" ng-model=\\\"trip.checked\\\">\\n                <label for=\\\"checked\\\"></label>\\n            </div>\\n        </div>\\n    </div>\\n</div>\\n\";\n\n//# sourceURL=webpack:///./src/app/containers/bucket-list/bucket-list.html?");
+eval("module.exports = \"<div>\\n    <h1>Trip Bucket List</h1>\\n\\n    <div class=\\\"trip-list\\\">\\n        <div class=\\\"trip\\\" ng-repeat=\\\"trip in $ctrl.trips\\\">\\n            <div class=\\\"image-wrapper\\\">\\n                <img ng-src=\\\"{{trip.image}}\\\" alt=\\\"\\\">\\n            </div>\\n            <span>{{trip.city}}, {{trip.country}}</span>\\n            <div class=\\\"checkbox-wrapper\\\">\\n                <input name=\\\"checked\\\" type=\\\"checkbox\\\" ng-model=\\\"trip.completed\\\">\\n                <label for=\\\"checked\\\"></label>\\n            </div>\\n        </div>\\n    </div>\\n</div>\\n\";\n\n//# sourceURL=webpack:///./src/app/containers/bucket-list/bucket-list.html?");
 
 /***/ }),
 
