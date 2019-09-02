@@ -12,6 +12,7 @@ const AddTripForm = props => {
     const _handleAddTrip = () => {
 
         const trip = {
+            id: Date.now(),
             city,
             country,
             image: '',

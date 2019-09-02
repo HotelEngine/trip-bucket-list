@@ -8,7 +8,7 @@ export const initialState = {
 export const addTrip = (state = initialState, { trip }) => ({
     ...state,
     trips: [
-        ...trips,
+        ...state.trips,
         trip
     ]
 });
