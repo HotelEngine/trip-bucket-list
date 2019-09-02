@@ -1,3 +1,30 @@
+.react-bucket-list {
+  font-family: 'Lexend Exa', sans-serif; }
+  .react-bucket-list h1 {
+    text-align: center;
+    margin: 30px 0; }
+  .react-bucket-list .trip-list {
+    margin: 0 auto;
+    width: 80vw; }
+  .react-bucket-list .trip {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightpink;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative; }
+    .react-bucket-list .trip .image-wrapper {
+      height: 115px;
+      overflow: hidden;
+      width: 200px; }
+    .react-bucket-list .trip img {
+      width: 100%; }
+    .react-bucket-list .trip span {
+      margin-left: 25px; }
+    .react-bucket-list .trip input[type="checkbox"] {
+      font-size: 100px;
+      margin-left: 20px; }
+
 * {
   margin: 0;
   padding: 0;

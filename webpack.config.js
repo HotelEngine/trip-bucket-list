@@ -35,7 +35,6 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                include: path.resolve(__dirname, 'src/app/styles'),
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
