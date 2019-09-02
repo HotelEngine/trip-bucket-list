@@ -1,10 +1,11 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { Creators as TripActions } from '../../Redux/Trips/Trips';
 
 const { useState } = React;
 
 const AddTripForm = props => {
+    const dispatch = useDispatch();
 
     const [city, setCity] = useState('');
     const [country, setCountry] = useState('');
@@ -16,10 +17,10 @@ const AddTripForm = props => {
             city,
             country,
             image: '',
-            checked: false
+            completed: false
         };
 
-        props.addTrip(trip);
+        dispatch(TripActions.addTrip(trip));
     }
 
     return (
@@ -31,4 +32,4 @@ const AddTripForm = props => {
     )
 }
 
-export default connect(null, TripActions)(AddTripForm);
+export default AddTripForm;
