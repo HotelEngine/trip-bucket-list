@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { Creators as TripActions } from '../../Redux/Trips/Trips';
+import { Creators as TripActions } from '../../Redux/Actions/Trips';
 
 const { useState } = React;
 

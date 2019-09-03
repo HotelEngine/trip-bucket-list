@@ -1,6 +1,6 @@
 import { compose, createStore } from 'redux';
 import { combineReducers } from 'redux';
-import Trips from './Trips/Trips';
+import Trips from './Actions/Trips';
 
 
 const configureStore = rootReducer => {

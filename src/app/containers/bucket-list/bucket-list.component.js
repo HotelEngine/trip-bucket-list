@@ -11,7 +11,7 @@
     function BucketListController($ngRedux) {
 
         const $ctrl = this;
-        const { Creators } = require('../../../../Redux/Trips/Trips');
+        const { Creators } = require('../../../../Redux/Actions/Trips');
 
         $ctrl.trips = $ngRedux.getState().Trips.trips;
         $ctrl.trip = {};

@@ -14,7 +14,6 @@ export const addTrip = (state = initialState, { trip }) => ({
 });
 
 export const updateTrip = (state = initialState, { trip }) => {
-
     const updatedTrips = state.trips.map(t => {
         if (t.id === trip.id) {
             return trip;
@@ -26,8 +25,7 @@ export const updateTrip = (state = initialState, { trip }) => {
         ...state,
         trips: updatedTrips
     }
-
-}
+};
 
 export const { Types, Creators } = createActions({
     addTrip: ['trip'],

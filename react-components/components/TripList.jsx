@@ -1,7 +1,7 @@
 import React from 'react';
 import '../containers/BucketList/BucketList.scss';
 import { connect, useDispatch, useSelector } from "react-redux";
-import { Creators as TripActions } from '../../Redux/Trips/Trips';
+import { Creators as TripActions } from '../../Redux/Actions/Trips';
 
 const TripList = () => {
 
