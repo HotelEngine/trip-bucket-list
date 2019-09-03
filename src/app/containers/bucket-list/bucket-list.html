@@ -2,7 +2,12 @@
     <h1>Trip Bucket List</h1>
 
     <div class="trip-list">
-        <div class="trip" ng-repeat="trip in $ctrl.trips">
+        <form>
+            <input placeholder="City" ng-model="$ctrl.trip.city" />
+            <input placeholder="Country" ng-model="$ctrl.trip.country" />
+            <button ng-click="$ctrl.addTrip()">Add Trip</button>
+        </form>
+        <div class="trip" ng-repeat="trip in $ctrl.trips track by $index">
             <div class="image-wrapper">
                 <img ng-src="{{trip.image}}" alt="">
             </div>
