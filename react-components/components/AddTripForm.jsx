@@ -4,7 +4,7 @@ import { Creators as TripActions } from '../../Redux/Actions/Trips';
 
 const { useState } = React;
 
-const AddTripForm = props => {
+const AddTripForm = () => {
     const dispatch = useDispatch();
 
     const [city, setCity] = useState('');

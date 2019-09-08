@@ -7,7 +7,7 @@ const BucketList = ({ store }) => (
     <Provider store={store}>
         <div className="react-bucket-list">
             <h1>Trip Bucket List</h1>
-            <AddTripForm store={store} />
+            <AddTripForm />
             <TripList />
         </div>
     </Provider>
