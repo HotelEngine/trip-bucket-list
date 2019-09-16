@@ -17,16 +17,20 @@
         $ctrl.trip = {};
 
         $ctrl.$onInit = $onInit;
+
         $ctrl.addTrip = addTrip;
+        $ctrl.updateTrip = updateTrip;
 
         function $onInit() {
             console.log('trips', $ctrl.trips);
         }
 
         function addTrip() {
-            $ngRedux.dispatch(Creators.addTrip($ctrl.trip));
-            $ctrl.trips = $ngRedux.getState().Trips.trips;
-            $ctrl.trip = {};
+            // do something
+        }
+
+        function updateTrip() {
+            // do something
         }
 
     }

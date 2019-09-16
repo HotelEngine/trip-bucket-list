@@ -3,7 +3,7 @@ import '../containers/BucketList/BucketList.scss';
 import { connect, useDispatch, useSelector } from "react-redux";
 import { Creators as TripActions } from '../../Redux/Actions/Trips';
 
-const TripList = () => {
+const TripsTable = () => {
 
     const trips = useSelector(state => state.Trips.trips);
     const dispatch = useDispatch();
@@ -39,4 +39,4 @@ const TripList = () => {
 
 }
 
-export default connect(null, null)(TripList);
+export default connect(null, null)(TripsTable);
