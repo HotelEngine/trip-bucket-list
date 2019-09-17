@@ -61,7 +61,7 @@ body {
 
 #app {
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.1); }
+  background-color: rgba(255, 255, 255, 0.2); }
 
 #github {
   position: fixed;
@@ -88,7 +88,7 @@ bucket-list form {
     font-family: 'Lexend Exa', sans-serif;
     padding: 5px 10px; }
   bucket-list form input[type="text"] {
-    margin-right: 15px;
+    margin-right: 5px;
     width: 250px; }
   bucket-list form button {
     background-color: black;
