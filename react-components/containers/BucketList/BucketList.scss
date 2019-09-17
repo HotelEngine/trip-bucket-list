@@ -34,7 +34,7 @@
 
     .trip-list {
         background-color: white;
-        border: 3px solid lightpink;
+        border: 4px solid lightpink;
         border-radius: 10px;
     }
 
@@ -45,7 +45,7 @@
         position: relative;
 
         &:not(:last-child) {
-            border-bottom: 3px solid lightpink;
+            border-bottom: 4px solid lightpink;
         }
 
         .image-wrapper {

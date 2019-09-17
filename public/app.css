@@ -23,7 +23,7 @@
       color: white; }
   .react-bucket-list .trip-list {
     background-color: white;
-    border: 3px solid lightpink;
+    border: 4px solid lightpink;
     border-radius: 10px; }
   .react-bucket-list .trip {
     display: flex;
@@ -31,7 +31,7 @@
     padding: 20px;
     position: relative; }
     .react-bucket-list .trip:not(:last-child) {
-      border-bottom: 3px solid lightpink; }
+      border-bottom: 4px solid lightpink; }
     .react-bucket-list .trip .image-wrapper {
       height: 100px;
       overflow: hidden;
@@ -63,30 +63,60 @@ body {
   height: 100vh;
   background-color: rgba(255, 255, 255, 0.1); }
 
-bucket-list {
-  font-family: 'Lexend Exa', sans-serif; }
-  bucket-list h1 {
-    text-align: center;
-    margin: 30px 0; }
-  bucket-list .trip-list {
-    margin: 0 auto;
-    width: 80vw; }
-  bucket-list .trip {
-    display: flex;
-    align-items: center;
-    border: 1px solid lightpink;
-    padding: 20px;
-    margin-bottom: 20px;
-    position: relative; }
-    bucket-list .trip .image-wrapper {
-      height: 115px;
-      overflow: hidden;
-      width: 200px; }
-    bucket-list .trip img {
-      width: 100%; }
-    bucket-list .trip span {
-      margin-left: 25px; }
-    bucket-list .trip input[type="checkbox"] {
-      font-size: 100px;
-      margin-left: 20px; }
+#github {
+  position: fixed;
+  right: 35px;
+  top: 30px; }
+
+bucket-list .container {
+  width: 80vw;
+  margin: 0 auto;
+  margin-bottom: 100px; }
+
+bucket-list h1 {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 60px; }
+
+bucket-list form {
+  margin: 40px 0 50px 0;
+  text-align: center; }
+  bucket-list form input, bucket-list form button {
+    font-size: 25px;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-family: 'Lexend Exa', sans-serif;
+    padding: 5px 10px; }
+  bucket-list form input[type="text"] {
+    margin-right: 15px;
+    width: 250px; }
+  bucket-list form button {
+    background-color: black;
+    color: white; }
+
+bucket-list .trip-list {
+  background-color: white;
+  border: 4px solid lightpink;
+  border-radius: 10px; }
+
+bucket-list .trip {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  position: relative; }
+  bucket-list .trip:not(:last-child) {
+    border-bottom: 4px solid lightpink; }
+  bucket-list .trip .image-wrapper {
+    height: 100px;
+    overflow: hidden;
+    width: 150px;
+    border-radius: 5px; }
+  bucket-list .trip img {
+    width: 100%;
+    border-radius: 5px; }
+  bucket-list .trip span {
+    margin-left: 25px; }
+  bucket-list .trip input[type="checkbox"] {
+    transform: scale(3);
+    margin: 0 55px 0 30px; }
 

@@ -1,21 +1,22 @@
-<div>
-    <h1>Trip Bucket List</h1>
+<div class="container">
+    <h1>Vacation Bucket List</h1>
+
+    <form id="addTripForm">
+        <input type="text" placeholder="City" ng-model="$ctrl.trip.city" />
+        <input type="text" placeholder="Country" ng-model="$ctrl.trip.country" />
+        <button ng-click="$ctrl.addTrip()">Add Trip</button>
+    </form>
 
     <div class="trip-list">
-        <form>
-            <input placeholder="City" ng-model="$ctrl.trip.city" />
-            <input placeholder="Country" ng-model="$ctrl.trip.country" />
-            <button ng-click="$ctrl.addTrip()">Add Trip</button>
-        </form>
         <div class="trip" ng-repeat="trip in $ctrl.trips track by $index">
-            <div class="image-wrapper">
-                <img ng-src="{{trip.image}}" alt="">
-            </div>
-            <span>{{trip.city}}, {{trip.country}}</span>
             <div class="checkbox-wrapper">
                 <input name="checked" type="checkbox" ng-model="trip.completed">
                 <label for="checked"></label>
             </div>
+            <div class="image-wrapper">
+                <img ng-src="{{trip.image}}" alt="">
+            </div>
+            <span>{{trip.city}}, {{trip.country}}</span>
         </div>
     </div>
 </div>
