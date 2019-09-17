@@ -5,13 +5,18 @@ export const initialState = {
     trips
 };
 
-export const addTrip = (state = initialState, { trip }) => ({
-    ...state,
-    trips: [
-        ...state.trips,
-        trip
-    ]
-});
+export const addTrip = (state = initialState, { trip }) => {
+    if (!trip.image) {
+        trip.image = 'https://stufff.s3.amazonaws.com/default-city.png';
+    }
+    return {
+        ...state,
+        trips: [
+            ...state.trips,
+            trip
+        ]
+    }
+};
 
 export const updateTrip = (state = initialState, { trip }) => {
     const updatedTrips = state.trips.map(t => {
