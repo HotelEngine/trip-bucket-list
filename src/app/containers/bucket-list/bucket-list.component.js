@@ -26,11 +26,15 @@
         }
 
         function addTrip() {
-            // do something
+            $ngRedux.dispatch(Creators.addTrip($ctrl.trip));
+            $ctrl.trips = $ngRedux.getState().Trips.trips;
+            $ctrl.trip = {};
         }
 
         function updateTrip() {
-            // do something
+            $ngRedux.dispatch(Creators.updateTrip($ctrl.trip));
+            $ctrl.trips = $ngRedux.getState().Trips.trips;
+            $ctrl.trip = {};
         }
 
     }
