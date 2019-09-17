@@ -6,7 +6,7 @@ import { Provider } from "react-redux";
 const BucketList = ({ store }) => (
     <Provider store={store}>
         <div className="react-bucket-list">
-            <h1>Trip Bucket List</h1>
+            <h1>Vacation Bucket List</h1>
             <AddTripForm />
             <TripsTable />
         </div>

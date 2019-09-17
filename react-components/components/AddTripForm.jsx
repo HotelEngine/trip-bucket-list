@@ -5,8 +5,8 @@ import { Creators as TripActions } from '../../Redux/Actions/Trips';
 const { useState } = React;
 
 const AddTripForm = () => {
-    const dispatch = useDispatch();
 
+    const dispatch = useDispatch();
     const [city, setCity] = useState('');
     const [country, setCountry] = useState('');
 
@@ -21,12 +21,15 @@ const AddTripForm = () => {
         };
 
         dispatch(TripActions.addTrip(trip));
+        setCity('');
+        setCountry('');
+
     }
 
     return (
-        <form onSubmit={e => e.preventDefault()}>
-            <input placeholder="City" onChange={e => setCity(e.target.value)} />
-            <input placeholder="Country" onChange={e => setCountry(e.target.value)} />
+        <form id="addTripForm" onSubmit={e => e.preventDefault()}>
+            <input type="text" placeholder="City" value={city} onChange={e => setCity(e.target.value)} />
+            <input type="text" placeholder="Country" value={country} onChange={e => setCountry(e.target.value)} />
             <button onClick={_handleAddTrip}>Add Trip</button>
         </form>
     )

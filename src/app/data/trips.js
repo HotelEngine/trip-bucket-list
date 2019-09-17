@@ -3,7 +3,7 @@ const trips = [
         id: 1,
         city: 'Seoul',
         country: 'South Korea',
-        image: 'https://www.webuildvalue.com/static/upload/seo/seoul-megacity-growth-sustainable.jpg',
+        image: 'https://assets3.thrillist.com/v1/image/2826051/size/gn-gift_guide_variable_c.jpg',
         completed: false
     },
     {

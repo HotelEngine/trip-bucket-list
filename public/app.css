@@ -1,29 +1,50 @@
 .react-bucket-list {
-  font-family: 'Lexend Exa', sans-serif; }
+  width: 80vw;
+  margin: 0 auto;
+  margin-bottom: 100px; }
   .react-bucket-list h1 {
     text-align: center;
-    margin: 30px 0; }
+    padding-top: 50px;
+    font-size: 60px; }
+  .react-bucket-list form {
+    margin: 40px 0 50px 0;
+    text-align: center; }
+    .react-bucket-list form input, .react-bucket-list form button {
+      font-size: 25px;
+      border-radius: 5px;
+      border: 2px solid black;
+      font-family: 'Lexend Exa', sans-serif;
+      padding: 5px 10px; }
+    .react-bucket-list form input[type="text"] {
+      margin-right: 15px;
+      width: 250px; }
+    .react-bucket-list form button {
+      background-color: black;
+      color: white; }
   .react-bucket-list .trip-list {
-    margin: 0 auto;
-    width: 80vw; }
+    background-color: white;
+    border: 3px solid lightpink;
+    border-radius: 10px; }
   .react-bucket-list .trip {
     display: flex;
     align-items: center;
-    border: 1px solid lightpink;
     padding: 20px;
-    margin-bottom: 20px;
     position: relative; }
+    .react-bucket-list .trip:not(:last-child) {
+      border-bottom: 3px solid lightpink; }
     .react-bucket-list .trip .image-wrapper {
-      height: 115px;
+      height: 100px;
       overflow: hidden;
-      width: 200px; }
+      width: 150px;
+      border-radius: 5px; }
     .react-bucket-list .trip img {
-      width: 100%; }
+      width: 100%;
+      border-radius: 5px; }
     .react-bucket-list .trip span {
       margin-left: 25px; }
     .react-bucket-list .trip input[type="checkbox"] {
-      font-size: 100px;
-      margin-left: 20px; }
+      transform: scale(3);
+      margin: 0 55px 0 30px; }
 
 * {
   margin: 0;
@@ -31,7 +52,16 @@
   box-sizing: border-box; }
 
 body {
-  max-width: 100vw; }
+  max-width: 100vw;
+  font-family: 'Lexend Exa', sans-serif;
+  font-size: 30px;
+  background-image: url("https://stufff.s3.amazonaws.com/map-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+#app {
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.1); }
 
 bucket-list {
   font-family: 'Lexend Exa', sans-serif; }
