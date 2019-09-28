@@ -10,7 +10,7 @@
     <div class="trip-list">
         <div class="trip" ng-repeat="trip in $ctrl.trips track by $index">
             <div class="checkbox-wrapper">
-                <input name="checked" type="checkbox" ng-model="trip.completed">
+                <input type="checkbox" ng-model="trip.completed" ng-click="$ctrl.updateTrip()">
                 <label for="checked"></label>
             </div>
             <div class="image-wrapper">

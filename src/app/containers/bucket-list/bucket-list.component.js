@@ -22,7 +22,7 @@
         $ctrl.updateTrip = updateTrip;
 
         function $onInit() {
-            console.log('trips', $ctrl.trips);
+            console.log('angular trips', $ctrl.trips);
         }
 
         function addTrip() {
@@ -35,6 +35,7 @@
             $ngRedux.dispatch(Creators.updateTrip($ctrl.trip));
             $ctrl.trips = $ngRedux.getState().Trips.trips;
             $ctrl.trip = {};
+            console.log('angular trips', $ctrl.trips);
         }
 
     }

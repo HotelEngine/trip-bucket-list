@@ -11,7 +11,7 @@ const TripsTable = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        console.log(trips)
+        console.log('react trips', trips)
     }, [trips])
 
     const handleCheckbox = trip => {
@@ -27,7 +27,6 @@ const TripsTable = () => {
                 <div key={trip.id} className="trip">
                     <div className="checkbox-wrapper">
                         <input
-                            name="checked"
                             type="checkbox"
                             checked={trip.completed}
                             onChange={() => handleCheckbox(trip)}

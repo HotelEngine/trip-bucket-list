@@ -6,7 +6,7 @@ import './app.module.js';
 import './containers/bucket-list/bucket-list.component.js';
 
 // Demo React -> Angular Components
-import './containers/bucket-list/react-bucket-list.component.js';
+import './containers/react-bucket-list.component.js';
 
 // Styles
 import './styles/index.js';

@@ -12,7 +12,7 @@ export default angular
 
     angular.module('app')
         .component('reactBucketListWrapper', {
-            // use reactBucketList component as the template in this wrapper component
+            // use above component as the template in this wrapper component
             template: `<react-bucket-list store="$ctrl.store"></react-bucket-list>`,
             controller: BucketListWrapperController
         });
@@ -20,7 +20,6 @@ export default angular
     function BucketListWrapperController($ngRedux) {
 
         const $ctrl = this;
-
         $ctrl.store = $ngRedux;
 
     }
